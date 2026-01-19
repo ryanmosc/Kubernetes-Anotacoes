@@ -109,6 +109,12 @@ minikube dashboard --url
 kubectl create deployment nome-deployment --image=ryanmosc/flask-kub-projeto
 ```
 
+**Deletar Deployment**
+
+```bash
+kubectl delete deployment nome-deployment
+```
+
 **Listar Deployments**
 
 ```bash
@@ -141,6 +147,12 @@ kubectl get deployments
 
 ```bash
 kubectl expose deployment nome-deployment --type=LoadBalancer --port=5000
+```
+
+**Deletar um Service para um Deployment**
+
+```bash
+kubectl delete service nome-service
 ```
 
 **Acessar o Service no Minikube (ambiente de teste)**
